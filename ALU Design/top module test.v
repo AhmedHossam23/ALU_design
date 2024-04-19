@@ -27,7 +27,7 @@ module top_test;
 end
 always #10 clk= ~clk;
 endmodule
-  /*initial begin
+  initial begin
   clk = 0;
   forever #10 clk = ~clk;
   end
@@ -126,4 +126,4 @@ endmodule
   PB2 =1;
   #3000; 
   PB2 = 0;
-  end*/
+  end
