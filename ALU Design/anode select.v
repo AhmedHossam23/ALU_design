@@ -1,4 +1,4 @@
-/*module AN_SEL(
+module AN_SEL(
   input clk_out,
   output reg[3:0]AN=4'b0,
   output reg[3:0]num_sel=4'b1111
@@ -20,4 +20,4 @@
           end
       end
   end
-endmodule*/
+endmodule
