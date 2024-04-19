@@ -26,7 +26,7 @@ module debouncer(button_in,clk,rst,p);
 					but_value[7] <= but_value[6];
 					but_value[8] <= but_value[7];
 					but_value[9] <= but_value[8];
-					/*
+					
 					if(but_value == 10'b1111111111)
 					begin
 						but_output[0]<=1;
@@ -37,7 +37,7 @@ module debouncer(button_in,clk,rst,p);
 						but_output[0]<=0;
 						but_output[1]<=but_output[0];
 					end
-					*/
+					
 					
 					// much simpler than if else statement 
 					but_output[0]<=&but_value;
@@ -77,7 +77,6 @@ module t_debouncer ();
   debouncer G1(button_in,clk_50M,rst,p); 
 endmodule
 
-/*
 
 // fsm is ued to debounce push buttons
 module db_fsm(input clk, rst, sw, output reg db);
@@ -178,6 +177,3 @@ module db_fsm(input clk, rst, sw, output reg db);
     endcase       
   end
 endmodule
-
-
-*/
